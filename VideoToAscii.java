@@ -4,6 +4,8 @@ import org.opencv.core.Size;
 import org.opencv.videoio.VideoCapture;
 import org.opencv.imgproc.Imgproc;
 
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class VideoToAscii {
@@ -14,13 +16,13 @@ public class VideoToAscii {
 
     private static final String ASCII_CHARS = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,\"^`'. ";
 
-    private static final String video = "D:\\admin\\Documents\\java\\project\\少帅\\ss.mp4";
+    //private static final String video = "";
 
     public static void main(String[] args) {
         if (args.length < 1 || !new java.io.File(args[0]).exists()) {
             System.out.println("File not found.");
-            args = new String[]{video};//-D java.library.path=C:\Windows\System32\opencv_java4100.dll
-            System.out.println(args);
+            //args = new String[]{video};//-D java.library.path=C:\Windows\System32\opencv_java4100.dll
+            System.out.println(Arrays.toString(args));
             return;
         }
 
@@ -36,7 +38,7 @@ public class VideoToAscii {
 
         Mat frame = new Mat();
 
-        try (Scanner scanner = new Scanner(System.in, "UTF-8")) {
+        try (Scanner scanner = new Scanner(System.in, StandardCharsets.UTF_8)) {
             // 获取终端尺寸（这里简单处理，假设固定宽度和高度）
             //TODO JAVA 如何获取终端尺寸捏？
             int terminalWidth = 200; // 可以根据实际情况调整
@@ -59,7 +61,7 @@ public class VideoToAscii {
                     asciiFrame.append("\n");
                 }
 
-                // 清屏（注意：在 Windows 的命令行中不起作用，需要使用特定的清屏命令）
+                // 清屏（注意：在 Windows 的命令行中不起作用，需要使用特定的清屏命令,其实清不清无所谓）
                 if (System.console() != null) {
                     //System.console().clearScreen();
                 } else {
@@ -72,7 +74,9 @@ public class VideoToAscii {
 
                  //暂停一段时间，以便观看 ASCII 艺术（这里使用简单的扫描器等待用户输入）
                     //System.out.print("Press Enter to continue to the next frame...");
-                    scanner.nextLine();
+                    //scanner.nextLine();
+
+                Thread.sleep(6);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -80,7 +84,7 @@ public class VideoToAscii {
             cap.release();
         }
 
-        //cap.release();
+        cap.release();
     }
 }
 
