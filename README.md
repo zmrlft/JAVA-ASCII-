@@ -5,35 +5,6 @@
 
 将视频通过Java的opencv库转化为ASCII字符视频以便于在终端上展示
 
-<!-- PROJECT SHIELDS -->
-
-
-
-<!-- PROJECT LOGO -->
-<br />
-
-<p align="center">
-  <a href="https://github.com/shaojintian/Best_README_template/">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center"></h3>
-  <p align="center">
-    
-    <br />
-    <a href="https://github.com/shaojintian/Best_README_template"><strong>探索本项目的文档 »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/shaojintian/Best_README_template">查看Demo</a>
-    ·
-    <a href="https://github.com/shaojintian/Best_README_template/issues">报告Bug</a>
-    ·
-    <a href="https://github.com/shaojintian/Best_README_template/issues">提出新特性</a>
-  </p>
-
-</p>
-
-
 
 ### 上手指南
 
@@ -48,7 +19,7 @@
 
 ###### **安装步骤**
 
-1. 安装opencv并且配置好环境请参考[https://blog.csdn.net/xzb5566/article/details/131853021#:~:text=%E9%A6%96%E5%85%88%E4%BB%8E%E5%AE%98%E6%96%B9%E6%88%96%E6%8F%90%E4%BE%9B%E7%9A%84%E9%93%BE#:~:text=%E9%A6%96%E5%85%88%E4%BB%8E%E5%AE%98%E6%96%B9%E6%88%96%E6%8F%90%E4%BE%9B%E7%9A%84%E9%93%BE](https://blog.csdn.net/xzb5566/article/details/131853021#:~:text=%E9%A6%96%E5%85%88%E4%BB%8E%E5%AE%98%E6%96%B9%E6%88%96%E6%8F%90%E4%BE%9B%E7%9A%84%E9%93%BE#:~:text=%E9%A6%96%E5%85%88%E4%BB%8E%E5%AE%98%E6%96%B9%E6%88%96%E6%8F%90%E4%BE%9B%E7%9A%84%E9%93%BE)
+1. 安装opencv并且配置好环境请参考[https://blog.csdn.net/xzb5566/article/details/131853021#:~:text=%E9%A6%96%E5%85%88%E4%BB%8E%E5%AE%98%E6%96%B9%E6%88%96%E6%8F%90%E4%BE%9B%E7%9A%84%E9%93%BE#:~:text=%E9%A6%96%E5%85%88%E4%BB%8E%E5%AE%98%E6%96%B9%E6%88%96%E6%8F%90%E4%BE%9B%E7%9A%84%E9%93%BE]
 
 2. 安装好opencv之后您还需要配置运行环境，请参考[https://blog.csdn.net/weixin_42558056/article/details/99624323]
 
